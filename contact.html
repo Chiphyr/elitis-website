@@ -19,8 +19,24 @@
 		}
 
 		.hero {
-			/*background-image: linear-gradient(to right top, #3fc56d, #4cb760, #54a954, #589b4a, #5a8e41);*/
-			background-color: #3b3939;
+			background: -webkit-linear-gradient(bottom left, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+			background: -o-linear-gradient(bottom left, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+			background: linear-gradient(to top right, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+			background-size: 400% 400%;
+			animation: epicBro 15s ease infinite;
+			/*background-color: #3b3939;*/
+		}
+
+		@keyframes epicBro {
+			0% {
+				background-position: 0% 50%;
+			}
+			50% {
+				background-position: 100% 50%;
+			}
+			100% {
+				background-position: 0% 50%;
+			}
 		}
 
 		.hero .nav,
